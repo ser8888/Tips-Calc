@@ -2,7 +2,7 @@
 //  ContentView.swift
 //  Tips Calc
 //
-//  Created by John Doe on 11/09/2022.
+//  Created by Sergejs Tiselskis on 11/09/2022.
 //
 
 import SwiftUI
