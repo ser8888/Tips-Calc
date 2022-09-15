@@ -34,6 +34,8 @@ struct ContentView: View {
                         .font(.largeTitle)
                         .foregroundColor(.red)
                         .foregroundStyle(.indigo)
+                        
+                        
                     Picker("Number of guests", selection:
                             $guestNumber) {
                             ForEach(2..<100) {
@@ -49,18 +51,25 @@ struct ContentView: View {
                         }
                     }
                     .pickerStyle(SegmentedPickerStyle())
+                
                 }
                 Section {
                     Text("\(totalPerGuest, specifier: "%.2f")")
-                        .bold()
+                        
+                        
                         .font(.largeTitle)
+                        .foregroundColor(.red)
+                        .bold()
+                        
+                        .padding()
                 }
-            }
+            
             .navigationTitle("Tips calculation")
             .navigationBarTitleDisplayMode(.inline)
             
         }
     }
+}
 }
 
 struct ContentView_Previews: PreviewProvider {
@@ -68,3 +77,4 @@ struct ContentView_Previews: PreviewProvider {
         ContentView()
     }
 }
+
